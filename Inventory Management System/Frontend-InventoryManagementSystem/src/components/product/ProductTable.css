@@ -1,0 +1,76 @@
+.product-table {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  animation: fadeInSlide 0.4s ease-in-out;
+  margin-top: 2rem;
+}
+
+.product-table h5 {
+  color: #4F46E5;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.product-table .table {
+  border-collapse: collapse;
+}
+
+.product-table .table th,
+.product-table .table td {
+  vertical-align: middle;
+}
+
+.product-table .table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f3f4f6;
+}
+
+.product-table .table-hover tbody tr:hover {
+  background-color: #e0e7ff;
+  transition: background-color 0.2s;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.add-new-btn {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  padding: 8px 20px;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 2rem; /* pill shape */
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.add-new-btn:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+}
+
+.add-new-btn:active {
+  transform: scale(0.98);
+  box-shadow: none;
+}
+
+/* In ProductTable.css */
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
